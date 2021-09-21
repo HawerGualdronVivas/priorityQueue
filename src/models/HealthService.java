@@ -4,25 +4,17 @@ import java.util.PriorityQueue;
 
 public class HealthService {
 
-	private static final int SIZE_ARRAY = 10;
 	PriorityQueue<Person> personPriorityQueue = new PriorityQueue<>();
 
 	public HealthService() {
-
+		personPriorityQueue.add(new Person("Jose", 1024, 25));
+		personPriorityQueue.add(new Person("Pepe", 1025, 61));
+		personPriorityQueue.add(new Person("Anna", 1026, 47));
 	}
 
-	public Person[] patients = new Person[SIZE_ARRAY];
-
-	public boolean addPatient(Person pat) {
-		for (int i = 0; i < patients.length; i++) {
-			if (patients[i] == null) {
-				patients[i] = pat;
-
-				return true;
-			}
-		}
-		return false;
-
+	public void addPerson(String name, int id, int age) {
+		personPriorityQueue.add(new Person(name, id, age));
+		return;
 	}
 
 }
