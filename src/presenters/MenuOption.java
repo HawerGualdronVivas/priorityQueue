@@ -1,8 +1,7 @@
 package presenters;
 
 public enum MenuOption{
-   ADD_ATHLETE, ADD_RECORD, SHOW_ATHLETES, REMOVE_PHASE_ONE,
-    REMOVE_PHASE_TWO, SHOW_PODIUM, EXIT;
+   ADD_PATIENT, EXIT;
 
    @Override
    public String toString() {
