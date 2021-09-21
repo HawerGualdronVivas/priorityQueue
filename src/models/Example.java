@@ -12,7 +12,7 @@ public class Example {
 
 	public boolean addPatient(Person pat) {
 		for (int i = 0; i < patients.length; i++) {
-			if (patients[i] != null) {
+			if (patients[i] == null) {
 				patients[i] = pat;
 
 				return true;
