@@ -6,10 +6,11 @@ import views.Window;
 
 public class Presenter {
 
-    private HealthService example;
+    private HealthService health;
     private Window window;
 
     public Presenter() {
+        health = new HealthService();
         window = new Window();
         showMenu();
     }
@@ -25,7 +26,6 @@ public class Presenter {
         showMenu();
     }
 
-
     }
 
-}
+
