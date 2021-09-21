@@ -19,12 +19,18 @@ public class Presenter {
         MenuOption option = window.showMenu();
         switch (option) {
             case ADD_PATIENT:
+            	add();
                 break;
             case EXIT:
                 return;
         }
         showMenu();
     }
+
+	private void add() {
+		health.addPerson(window.getName(), window.getCode(), window.getAge());
+		
+		}
 
     }
 
