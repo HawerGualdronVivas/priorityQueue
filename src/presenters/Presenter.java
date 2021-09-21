@@ -18,7 +18,6 @@ public class Presenter {
         MenuOption option = window.showMenu();
         switch (option) {
             case ADD_PATIENT:
-                patientManager();
                 break;
             case EXIT:
                 return;
@@ -26,12 +25,6 @@ public class Presenter {
         showMenu();
     }
 
-    public void patientManager() {
-        String name = "";
-        int id = 9;
-        int age = 34;
-
-        example.addPatient(new Person(name, id, age));
 
     }
 
