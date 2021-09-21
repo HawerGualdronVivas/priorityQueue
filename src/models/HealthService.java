@@ -17,4 +17,11 @@ public class HealthService {
 		return;
 	}
 
+	public Person calculatePriorityAccordingToTheAgeOfThePersons() {
+		while (!personPriorityQueue.isEmpty()) {
+			return personPriorityQueue.remove();
+        }
+		return null;
+	}
+
 }
