@@ -1,10 +1,13 @@
 package models;
 
-public class Example {
+import java.util.PriorityQueue;
+
+public class HealthService {
 
 	private static final int SIZE_ARRAY = 10;
+	PriorityQueue<Person> personPriorityQueue = new PriorityQueue<>();
 
-	public Example() {
+	public HealthService() {
 
 	}
 

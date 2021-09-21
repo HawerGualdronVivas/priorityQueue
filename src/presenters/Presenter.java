@@ -1,12 +1,12 @@
 package presenters;
 
-import models.Example;
+import models.HealthService;
 import models.Person;
 import views.Window;
 
 public class Presenter {
 
-    private Example example;
+    private HealthService example;
     private Window window;
 
     public Presenter() {
